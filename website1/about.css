@@ -1,0 +1,150 @@
+body{
+    background-color:rgb(35, 34, 34);
+    margin: auto;
+    padding: auto;
+}
+
+
+header h1{
+    position: absolute;
+    color: white;
+    margin-left: 20px;
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+nav{
+    float: left;
+    margin-left: 190px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+nav a{
+    margin-left: 70px;
+    font-size: 18px;
+    margin-top: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+nav :nth-child(4){
+    background-color: #E36397;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover{
+    color: #E36397;
+}
+
+nav :nth-child(4):hover{
+    transform: translateY(-10px);
+    background-color: rgb(35, 34, 34);
+    border: solid 3px #E36397;
+    color: #E36397;
+}
+
+.logo{
+        font-family: "Smooch Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 40px;
+        margin-left: 50px;
+        margin-top: 40px;
+        height: 20px;
+        color: white;
+}
+
+
+.pinkbox{
+    height: 100%;
+    width: 500px;
+    position: absolute;
+    float: right;
+    z-index: -99;
+    margin-left: 1035px;
+    background:
+    linear-gradient(135deg,#0000 18.75%,#E36397 0 2.25%,#0000 0),
+    repeating-linear-gradient(45deg,#E36397 -6.25% 6.25%,rgb(35, 34, 34) 0 18.75%);
+}
+
+.textbox{
+    height: 400px;
+    width: 500px;
+    position: relative;
+    padding-top: 130px;
+    padding-left: 250px;
+    text-align: left;
+    color: white;
+    z-index: -3;
+}
+
+.textbox h2{
+    color: #BC8DA7;
+    font-size: 30px;
+}
+
+.textbox h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.textbox h3{
+    padding-top: 2px;
+    margin-top: 2px;
+    color: white;
+    font-weight: 300;
+}
+
+button{
+    background-color: #E36397;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    height: 50px;
+    width: 290px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 2px;
+    transition: ease 1s;
+    margin-left: 245px;
+    position: absolute;
+    z-index: 2;
+}
+ button svg{
+    width: 15px;
+    height: 15px;
+    padding-top: 2px;
+    transition: 2s ease;
+    animation: Arrow 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Arrow{
+    from{
+        transform: translateX(0px);
+
+    }
+    25%{
+        transform: translateX(4px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+ button:hover{
+    box-shadow: 0 0 35px #E36397;
+    cursor: pointer;
+}
